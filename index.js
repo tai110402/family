@@ -5,6 +5,31 @@ var deathAnniversaryList = [
     deathAnniversary: "2023-02-07",
   },
   {
+    name: "Ông: Trần Hữu Loan 2",
+    dateOfBirth: "2024-02-11",
+    deathAnniversary: "2023-02-07",
+  },
+  {
+    name: "Ông: Trần Hữu Loan 3",
+    dateOfBirth: "2024-02-11",
+    deathAnniversary: "2023-02-07",
+  },
+  {
+    name: "Ông: Trần Hữu Loan",
+    dateOfBirth: "2024-02-11",
+    deathAnniversary: "2023-02-07",
+  },
+  {
+    name: "Ông: Trần Hữu Loan 2",
+    dateOfBirth: "2024-02-11",
+    deathAnniversary: "2023-02-07",
+  },
+  {
+    name: "Ông: Trần Hữu Loan 3",
+    dateOfBirth: "2024-02-11",
+    deathAnniversary: "2023-02-07",
+  },
+  {
     name: "Ông: Trần Hữu Loan",
     dateOfBirth: "2024-02-11",
     deathAnniversary: "2024-08-11",
