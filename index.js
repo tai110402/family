@@ -21,6 +21,22 @@ var deathAnniversaryList = [
   },
 ];
 
+function getListDeathAnniversarInMonth(month) {
+  // Chuyển đổi tháng thành chuỗi dạng "MM"
+  const targetMonth = month < 10 ? `0${month}` : `${month}`;
+
+  // Lọc danh sách theo điều kiện
+  const filteredList = deathAnniversaryList.filter((item) => {
+    // Lấy tháng từ ngày mất (deathAnniversary)
+    const anniversaryMonth = item.deathAnniversary.split("-")[1];
+
+    // So sánh với tháng cần tìm kiếm
+    return anniversaryMonth === targetMonth;
+  });
+
+  return filteredList;
+}
+
 function getNearDateList() {
   // Lấy ngày hôm qua
   var yesterday = new Date();
@@ -52,12 +68,12 @@ function getNearDateList() {
   return filteredList;
 }
 
-function myFunction() {
+function myFunction(month) {
   //Remove current div inside
   var parentDiv = document.getElementById("death-anniversary-list");
   parentDiv.innerHTML = "";
 
-  var list = getNearDateList();
+  var list = getListDeathAnniversarInMonth(month);
 
   for (var i = 0; i < list.length; i++) {
     // Tạo div ngoài cùng
