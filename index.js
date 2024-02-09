@@ -1,3 +1,9 @@
+
+var deathAnniversaryList = [
+    {dateOfBirth: "2024-02-11"},
+    {deathAnniversary: "2024-02-09"}
+]
+
 function myFunction() {
     //Remove current div inside
     var parentDiv = document.getElementById("death-anniversary-list");
@@ -19,9 +25,17 @@ var innerDiv = document.createElement("div");
 innerDiv.className = "col-lg-6 mx-auto";
 
 // Tạo và thêm p vào div con
+var dateString = deathAnniversaryList[0].dateOfBirth;
+var customDate = new Date(dateString);
+var year = customDate.getFullYear();
+var month = (customDate.getMonth() + 1).toString().padStart(2, '0'); // Tháng bắt đầu từ 0
+var day = customDate.getDate().toString().padStart(2, '0');
+
+var formattedDate = `${year}-${month}-${day}`;
+
 var newP = document.createElement("p");
 newP.className = "lead mb-0 fs-4";
-newP.textContent = "01-01-1951 -- 01-01-2002";
+newP.textContent = "01-01-1951 -- " + formattedDate;
 innerDiv.appendChild(newP);
 
 // Thêm div con vào div ngoài cùng
@@ -34,5 +48,3 @@ var targetContainer = document.getElementById("death-anniversary-list");
 targetContainer.appendChild(newDiv);
     }
 }
-
-var danhSachNguoiDung = "tai"
