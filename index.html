@@ -15,6 +15,10 @@
       href="https://unpkg.com/css.gg@2.0.0/icons/css/arrow-down-r.css"
       rel="stylesheet"
     />
+    <link
+      href="https://unpkg.com/css.gg@2.0.0/icons/css/play-button-r.css"
+      rel="stylesheet"
+    />
     <script src="https://cdn.jsdelivr.net/npm/lunar-calendar-js@1.0.0/dist/lunar-calendar.min.js"></script>
     <script src="index.js"></script>
   </head>
@@ -46,7 +50,7 @@
         data-bs-toggle="collapse"
         href="#collapseExample1"
       >
-        <h2>Danh sách ngày giỗ</h2>
+        <h2 class="my-1">Danh sách ngày giỗ</h2>
       </a>
       <div class="collapse" id="collapseExample1">
         <div class="d-flex justify-content-center">
@@ -92,36 +96,64 @@
         aria-expanded="false"
         aria-controls="collapseExample"
       >
-        <h2>Thành viên gia đình</h2>
+        <h2 class="my-1">Thành viên gia đình</h2>
       </a>
-      <div class="collapse" id="collapseExample2">
-        <div class="">
+      <div class="collapse py-2" id="collapseExample2">
+        <div>
           <ul>
             <li>
-              <div class="d-flex">
-                <i class="gg-arrow-down-r"></i>
+              <div class="d-flex" onclick="openForm()">
+                <i class="gg-play-button-r border-0 mt-1"></i>
                 Tran Vawn A - Tran Van B
               </div>
 
               <ul>
                 <li>
                   <div class="d-flex">
-                    <i class="gg-arrow-down-r"></i>
+                    <i
+                      class="gg-play-button-r border-0 mt-1 btn"
+                      data-bs-toggle="collapse"
+                      href="#collapseExample3"
+                      role="button"
+                      aria-expanded="false"
+                      aria-controls="collapseExample3"
+                    ></i>
                     Tran Huu Hiep - Pham Thi Huong
                   </div>
 
-                  <ul>
+                  <ul class="collapse" id="collapseExample3">
                     <li>
-                      Tran Van Quyet - Tran T Hoai Thu
-                      <ul>
+                      <div class="d-flex">
+                        <i
+                          class="gg-play-button-r border-0 mt-1 btn"
+                          data-bs-toggle="collapse"
+                          href="#collapseExample4"
+                          role="button"
+                          aria-expanded="false"
+                          aria-controls="collapseExample4"
+                        ></i>
+                        Tran Van Quyet - Tran T Hoai Thu
+                      </div>
+                      <ul class="collapse" id="collapseExample4">
                         <li>Tran Van Tai</li>
                         <li>Tran Minh Nguyen</li>
                         <li>Thanh vien moi</li>
                       </ul>
                     </li>
                     <li>
-                      Tran Dinh Doan - Nguyen T Anh Ngoc
-                      <ul>
+                      <div class="d-flex">
+                        <i
+                          class="gg-play-button-r border-0 mt-1 btn"
+                          data-bs-toggle="collapse"
+                          href="#collapseExample5"
+                          role="button"
+                          aria-expanded="false"
+                          aria-controls="collapseExample5"
+                        ></i>
+                        Tran Dinh Doan - Nguyen T A Ngoc
+                      </div>
+
+                      <ul class="collapse" id="collapseExample5">
                         <li>Tran Minh Chau</li>
                       </ul>
                     </li>
@@ -135,6 +167,28 @@
           </ul>
         </div>
       </div>
+    </div>
+
+    <div class="popup" id="myForm">
+      <form action="/action_page.php" class="form-container">
+        <h1>Login</h1>
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required />
+
+        <label for="psw"><b>Password</b></label>
+        <input
+          type="password"
+          placeholder="Enter Password"
+          name="psw"
+          required
+        />
+
+        <button type="submit" class="btn">Login</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">
+          Close
+        </button>
+      </form>
     </div>
 
     <script
