@@ -19,6 +19,10 @@
       href="https://unpkg.com/css.gg@2.0.0/icons/css/play-button-r.css"
       rel="stylesheet"
     />
+    <link
+      href="https://unpkg.com/css.gg@2.0.0/icons/css/arrow-left.css"
+      rel="stylesheet"
+    />
     <script src="https://cdn.jsdelivr.net/npm/lunar-calendar-js@1.0.0/dist/lunar-calendar.min.js"></script>
     <script src="index.js"></script>
   </head>
@@ -170,25 +174,27 @@
     </div>
 
     <div class="popup" id="myForm">
-      <form action="/action_page.php" class="form-container">
-        <h1>Login</h1>
+      <i class="gg-arrow-left btn" onclick="closeForm()"></i>
+      <img
+        id="profileBackgroundImg"
+        src="https://baoquangngai.vn/file/8a10a0d36ccebc89016ce0c6fa3e1b83/dataimages/202201/original/images2432117_1.jpg"
+        alt="Hình ảnh"
+        class="profile-img"
+      />
+      <div class="d-flex">
+        <img id="profileImg" alt="Hình ảnh" class="profile-img" />
+        <div class="pt-5 px-2">
+          <h1 class="name">Trần Văn Tài (Tài)</h1>
+          <h3 class="date-of-birth fs-5">__________</h3>
+        </div>
+      </div>
 
-        <label for="email"><b>Email</b></label>
-        <input type="text" placeholder="Enter Email" name="email" required />
-
-        <label for="psw"><b>Password</b></label>
-        <input
-          type="password"
-          placeholder="Enter Password"
-          name="psw"
-          required
-        />
-
-        <button type="submit" class="btn">Login</button>
-        <button type="button" class="btn cancel" onclick="closeForm()">
-          Close
-        </button>
-      </form>
+      <div class="pt-0 px-2">
+        <h1 class="name fs-2">Chi tiết</h1>
+        <ul>
+          <li class="fs-3">Đang học tại Đại Học Bách Khoa Hà Nội</li>
+        </ul>
+      </div>
     </div>
 
     <script

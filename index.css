@@ -11,7 +11,36 @@ li {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgb(255, 255, 255);
   width: 100vw;
   height: 100vh;
+}
+
+#profileImg {
+  position: fixed;
+  top: 42vw;
+  left: 20%;
+  transform: translate(-50%, -50%);
+
+  border-radius: 50%;
+  height: 30vw;
+  width: 30vw;
+  border: 4px black solid;
+}
+
+#profileBackgroundImg {
+  height: 50vw;
+  width: 100vw;
+}
+
+.gg-arrow-left {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs, 1));
+  width: 28px;
+  height: 28px;
+  margin-top: 3px;
+  margin-bottom: -28px;
+  margin-left: 5px;
 }
