@@ -150,6 +150,20 @@ function myFunction(month) {
   }
 }
 
+function openGoogleMaps() {
+  // Hàm mở ứng dụng Google Maps khi click vào địa chỉ
+
+  var latitude = 10.7769; // Thay đổi thành vĩ độ của địa chỉ của bạn
+  var longitude = 106.7009; // Thay đổi thành kinh độ của địa chỉ của bạn
+  var label = "Địa chỉ của bạn"; // Thay đổi thành nhãn bạn muốn hiển thị
+
+  // Tạo đường link cho ứng dụng Google Maps
+  var mapLink = "geo:" + latitude + "," + longitude + "?q=" + label;
+
+  // Mở ứng dụng Google Maps
+  window.location.href = mapLink;
+}
+
 function openForm(id) {
   // Lấy phần tử img bằng cách sử dụng id
   var imgElement = document.getElementById("profileImg");
