@@ -64,7 +64,7 @@ var memberList = [
     id: 100002,
     name: "Trần Đình Đoàn",
     working: "Làm việc tại Công ty Điện Lực Miền Trung",
-    address: "Số xx, Đường xx, Đồng Hới, Quảng Bình",
+    address: "Ngõ 33 Thái Phiên, Đồng Hới, Quảng Bình",
     dateOfBirth: "2002-10-10",
     avatarImgSrc:
       "https://scontent.fhan4-2.fna.fbcdn.net/v/t39.30808-6/346849824_1528272140909861_5636495220480727820_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeEsqqOfdbGYiIi7w9LK_Ggu0X1KviON-lfRfUq-I436V3niJs6PkD6dmgetUi4MjJhk5Itq1b0uvZaGnzKU-axU&_nc_ohc=S8Q2JY6jt3sAX_ADjwP&_nc_ht=scontent.fhan4-2.fna&oh=00_AfCB9q0CpyE85gbYMpnOrQPQs6lU1Q3HEKciJE3nqG5IDw&oe=65CBACEE",
