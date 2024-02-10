@@ -106,7 +106,7 @@
         <div>
           <ul class="px-0">
             <li>
-              <div class="d-flex" onclick="openForm()">
+              <div class="d-flex" onclick="openForm(100001)">
                 <i class="gg-play-button-r border-0 mt-1"></i>
                 Tran Vawn A - Tran Van B
               </div>
@@ -154,7 +154,8 @@
                           aria-expanded="false"
                           aria-controls="collapseExample5"
                         ></i>
-                        Tran Dinh Doan - Nguyen T A Ngoc
+                        <p onclick="openForm(100002)">Trần Đình Đoàn</p>
+                        - Nguyen T A Ngoc
                       </div>
 
                       <ul class="collapse" id="collapseExample5">
@@ -176,27 +177,30 @@
     <div class="popup" id="myForm">
       <i class="gg-arrow-left btn" onclick="closeForm()"></i>
       <img
-        id="profileBackgroundImg"
-        src="https://baoquangngai.vn/file/8a10a0d36ccebc89016ce0c6fa3e1b83/dataimages/202201/original/images2432117_1.jpg"
+        id="profile-background-img"
+        src=""
         alt="Hình ảnh"
         class="profile-img"
       />
       <div class="d-flex">
-        <img id="profileImg" alt="Hình ảnh" class="profile-img" />
+        <img id="profile-img" src="" alt="Hình ảnh" class="profile-img" />
         <div class="pt-5 px-2">
-          <h1 class="name">Trần Văn Tài (Tài)</h1>
-          <h3 class="date-of-birth fs-5">__________</h3>
+          <h1 id="profile-name" class="my-0">Trần Văn Tài (Tài)</h1>
+          <p id="profile-date-of-birth" class="my-0">2002-04-11</p>
+          <h3 class="fs-5">__________</h3>
         </div>
       </div>
 
       <div class="pt-0 px-2">
         <h1 class="name fs-2">Chi tiết</h1>
         <ul>
-          <li class="fs-3">Đang học tại Đại Học Bách Khoa Hà Nội</li>
+          <li id="profile-work" class="fs-4">
+            Đang học tại Đại Học Bách Khoa Hà Nội
+          </li>
           <li>
             <a
-              id="address"
-              class="address fs-3"
+              id="profile-address"
+              class="fs-4"
               href="https://www.google.com/maps?q=21.0052564,105.8443105"
               target="_blank"
               >Địa chỉ: KTX Đại Học Bách Khoa Hà Nội</a

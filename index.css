@@ -16,7 +16,7 @@ li {
   height: 100vh;
 }
 
-#profileImg {
+#profile-img {
   position: fixed;
   top: 42vw;
   left: 20%;
@@ -25,10 +25,10 @@ li {
   border-radius: 50%;
   height: 30vw;
   width: 30vw;
-  border: 4px black solid;
+  border: 4px white solid;
 }
 
-#profileBackgroundImg {
+#profile-background-img {
   height: 50vw;
   width: 100vw;
 }
