@@ -10,7 +10,7 @@ li {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -45%);
   background-color: rgb(255, 255, 255);
   width: 100vw;
   height: 100vh;
@@ -34,7 +34,7 @@ li {
 }
 
 .gg-arrow-left {
-  top: 5%;
+  top: 0%;
   left: 0%;
   transform: translate(0%, 0%);
   box-sizing: border-box;
